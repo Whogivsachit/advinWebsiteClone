@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+  font-family: 'Figtree', sans-serif;
+}
+
+table>thead>tr>th {
+  @apply border-y px-4 py-2;
+}
+
+table>tbody>tr>td {
+  @apply border-t px-4 py-2;
+}
+
+table>tbody>tr>td:last-child {
+  @apply border-b;
+}
+
+#dropdownMenu {
+  @apply p-3
+}
+/* Mobile Responsive */
+.container {
+    @apply px-5 md:px-[8rem] lg:px-[8rem];
+}

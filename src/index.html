@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/674c6789d3.js" crossorigin="anonymous"></script>
+    <script src="./assets/main.js" defer></script>
+</head>
+<nav class="h-16 bg-foreground">
+    <div class="container mx-auto">
+        <div class="flex flex-wrap items-center justify-between">
+            <div class="flex items-center">
+                <img src="https://advinservers.com/eagle_white.svg" alt="Advin Servers" class="h-8">
+                <a href="#" class="flex items-center h-16 self-center text-3xl font-semibold text-white pl-2">Advin Servers</a>
+            </div>
+            <button id="dropdownBtn" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" >
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+            </button>
+            <div id="dropdownMenu" class="hidden md:flex text-muted space-x-6 text-base">
+                <a href="/src/index.html" class="text-white">Home</a>
+                <a href="/src/cloud.html">Cloud Servers</a>
+                <a href="/src/dedi.html">Dedicated Servers</a>
+                <a href="/src/web.html">Web Hosting</a>
+            </div>
+            <div class="hidden md:flex space-x-3 text-sm font-bold text-white">
+                <a href="#" class="border-2 border-borders px-4 py-2 rounded-md">Client Area</a>
+                <a href="#" class="border-2 border-borders px-4 py-2 rounded-md bg-gradient-to-r from-gray-800 to-gray-950">Order Cloud Server</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<body class="bg-background">
+
+    <!-- Header -->
+    <section id="header" class="bg-foreground py-20">
+        <div class="container mx-auto py-12">
+            <div class="flex flex-col text-white">
+                <h1 class="text-6xl font-bold">High performance Servers</h1>
+                <p class="text-2xl mt-6">We're an affordable hosting provider based in the USA.<br/>We offer reliable and quality hosting solutions located across 6 global locations.</p>
+                <ul class="list-disc list-inside mt-5 text-base">
+                    <li>Owned hardware across all cloud server regions</li>
+                    <li>Enterprise hardware with great support</li>
+                    <li>Global availability of servers, 99.99% SLA guarantee</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="container mx-auto pt-12">
+        <h2 class="text-4xl font-semibold py-6">Our Products</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+            <div class="p-5 rounded-md border border-borders shadow-xl">
+                <h3 class="text-2xl font-medium text-muted">Cloud Servers</h3>
+                <p class="text-md text-muted font-thin">Starting at</p>
+                <div class="flex items-baseline">
+                    <span class="text-3xl font-semibold">$</span>
+                    <span class="text-5xl">6.99</span>
+                    <span class="text-md text-muted">/month</span>
+                </div>
+                <ul class="text-muted pt-2 font-normal">
+                    <li class="flex"><i class="fa-solid fa-check text-black"></i> <span class="ms-2">Starts with 8GB RAM & 4 vCPU</span></li>
+                    <li class="flex"><i class="fa-solid fa-check text-black"></i> <span class="ms-2">AMD EPYC Processors</span></li>
+                    <li class="flex"><i class="fa-solid fa-check text-black"></i> <span class="ms-2">Enterprise Gen4 NVMe</span></li>
+                    <li class="flex"><i class="fa-solid fa-check text-black"></i> <span class="ms-2">ECC Registered Memory</span></li>
+                    <li class="flex"><i class="fa-solid fa-check text-black"></i> <span class="ms-2">Full Root Access</span></li>
+                    <li class="flex"><i class="fa-solid fa-check text-black"></i> <span class="ms-2">KVM & Nested Virtualization</span></li>
+                    <li class="flex"><i class="fa-solid fa-check text-black"></i> <span class="ms-2">10 Gbps Network Connection</span></li>
+                    <li class="flex"><i class="fa-solid fa-check text-black"></i> <span class="ms-2">Available in 6 Global Locations</span></li>
+                </ul>
+                <a href="#" class="mt-4 block w-full bg-black hover:bg-gray-800 text-white text-center py-2 rounded-md">Learn More</a>
+            </div>
+
+            <div class="p-5 rounded-md border border-borders shadow-xl w-full">
+                <h3 class="text-2xl font-medium text-muted">Dedicated Servers</h3>
+                <p class="text-md text-muted font-thin">Starting at</p>
+                <div class="flex items-baseline">
+                    <span class="text-3xl">$</span>
+                    <span class="text-5xl">199.99</span>
+                    <span class="text-md text-muted">/month</span>
+                </div>
+                <ul class="text-muted pt-2 font-normal">
+                    <li class="flex"><i class="fa-solid fa-check text-black"></i> <span class="ms-2">Bare Metal Servers</span></li>
+                    <li class="flex"><i class="fa-solid fa-check text-black"></i> <span class="ms-2">Variety of Configurations</span></li>
+                    <li class="flex"><i class="fa-solid fa-check text-black"></i> <span class="ms-2">Control Panel</span></li>
+                    <li class="flex"><i class="fa-solid fa-check text-black"></i> <span class="ms-2">24x7 KVM or IPMI Access</span></li>
+                    <li class="flex"><i class="fa-solid fa-check text-black"></i> <span class="ms-2">Dedicated Hardware</span></li>
+                    <li class="flex"><i class="fa-solid fa-check text-black"></i> <span class="ms-2">Nested Virtualization</span></li>
+                    <li class="flex"><i class="fa-solid fa-check text-black"></i> <span class="ms-2">10 Gbps Network Connection</span></li>
+                    <li class="flex"><i class="fa-solid fa-check text-black"></i> <span class="ms-2">Available in 3 Global Locations</span></li>
+                </ul>
+                <a href="#" class="mt-4 block w-full bg-black hover:bg-gray-800 text-white text-center py-2 rounded-md">Learn More</a>
+            </div>
+
+            <div class="p-5 rounded-md border border-borders shadow-xl w-full">
+                <h3 class="text-2xl font-medium text-muted">Web Hosting</h3>
+                <p class="text-md text-muted font-thin">Starting at</p>
+                <div class="flex items-baseline">
+                    <span class="text-3xl">$</span>
+                    <span class="text-5xl">1.99</span>
+                    <span class="text-md text-muted">/month</span>
+                </div>
+                <ul class="text-muted pt-2 font-normal">
+                    <li class="flex"><i class="fa-solid fa-check text-black"></i> <span class="ms-2">Intel Xeon Processors</span></li>
+                    <li class="flex"><i class="fa-solid fa-check text-black"></i> <span class="ms-2">NVMe SSD Storage</span></li>
+                    <li class="flex"><i class="fa-solid fa-check text-black"></i> <span class="ms-2">Daily Offsite Backups</span></li>
+                    <li class="flex"><i class="fa-solid fa-check text-black"></i> <span class="ms-2">cPanel or DirectAdmin Access</span></li>
+                    <li class="flex"><i class="fa-solid fa-check text-black"></i> <span class="ms-2">CloudLinux & Softaculous</span></li>
+                    <li class="flex"><i class="fa-solid fa-check text-black"></i> <span class="ms-2">Great for Small Websites</span></li>
+                    <li class="flex"><i class="fa-solid fa-check text-black"></i> <span class="ms-2">1 Gbps Network Connection</span></li>
+                    <li class="flex"><i class="fa-solid fa-check text-black"></i> <span class="ms-2">Available in 3 Global Locations</span></li>
+                </ul>
+                <a href="#" class="mt-4 block w-full bg-black hover:bg-gray-800 text-white text-center py-2 rounded-md">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="container mx-auto pt-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col mr-5 ml-1 mt-5">
+                <div class="border border-borders p-2 w-fit">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-10 text-black"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z"></path></svg>
+                </div>
+                <h3 class="text-2xl font-medium text-black pt-6 pb-2">Lightning Fast CPUs</h3>
+                <p class="text-muted">We only use some of the fastest and highest end CPUs in our servers, including AMD EPYC Genoa and Milan series of processors.</p>
+            </div>
+
+            <div class="flex flex-col mr-5 ml-1 mt-5">
+                <div class="border border-borders p-2 w-fit">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-10 text-black"><path stroke-linecap="round" stroke-linejoin="round" d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 0 1 1.06 0Z"></path></svg>
+                </div>
+                <h3 class="text-2xl font-medium text-black pt-6 pb-2">Network</h3>
+                <p class="text-muted">We offer up to 10 Gbit network uplinks in most of our locations, a massive upgrade from what is typically standard of cloud servers.</p>
+            </div>
+
+            <div class="flex flex-col mr-5 ml-1 mt-5">
+                <div class="border border-borders p-2 w-fit">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-10 text-black"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z"></path></svg>
+                </div>
+                <h3 class="text-2xl font-medium text-black pt-6 pb-2">All NVMe Storage</h3>
+                <p class="text-muted">Almost all of our servers contain lightning fast solid state storage, resulting in low latency access times to your data.</p>
+            </div>
+
+            <div class="flex flex-col mr-5 ml-1 mt-5">
+                <div class="border border-borders p-2 w-fit">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-10 text-black"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z"></path></svg>
+                </div>
+                <h3 class="text-2xl font-medium text-black pt-6 pb-2">Affordable</h3>
+                <p class="text-muted">We are one of the cheapest cloud service providers in the market, offering high performance servers at a fraction of the cost.</p>
+            </div>
+
+            <div class="flex flex-col mr-5 ml-1 mt-5">
+                <div class="border border-borders p-2 w-fit">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-10 text-black"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 14.25h13.5m-13.5 0a3 3 0 0 1-3-3m3 3a3 3 0 1 0 0 6h13.5a3 3 0 1 0 0-6m-16.5-3a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3m-19.5 0a4.5 4.5 0 0 1 .9-2.7L5.737 5.1a3.375 3.375 0 0 1 2.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 0 1 .9 2.7m0 0a3 3 0 0 1-3 3m0 3h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Zm-3 6h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Z"></path></svg>
+                </div>
+                <h3 class="text-2xl font-medium text-black pt-6 pb-2">Owned Infrastructure</h3>
+                <p class="text-muted">We own all of our hardware across nearly all of our cloud server regions, allowing us to deliver high performance at an affordable price.</p>
+            </div>
+
+            <div class="flex flex-col mr-5 ml-1 mt-5">
+                <div class="border border-borders p-2 w-fit">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-10 text-black"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"></path></svg>
+                </div>
+                <h3 class="text-2xl font-medium text-black pt-6 pb-2">Reliable</h3>
+                <p class="text-muted">All services come with a 99.9% uptime SLA policy by default. We use enterprise gear and redundant systems to ensure reliability.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="ref" class="container mx-auto pt-12">
+        <div class="mx-auto bg-black px-6 py-20 shadow-xl rounded-3xl sm:px-10 sm:py-24 md:px-12 lg:px-20 text-white text-md">
+            <p class="md:w-1/2 text-xl">“Advin Servers ensures that only the best hardware and services are offered at the prices you deserve. Their commitment to quality and customer satisfaction sets them apart, while still offering a product that is 10x cheaper than the competition. ”</p>
+            <h2 class="pt-6">John</h2>
+            <h2>Website Developer</h2>
+        </div>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-foreground pb-8 pt-16 mt-32">
+        <div class="container mx-auto text-muted text-sm">
+            <div class="flex flex-col md:flex-row place-content-between space-y-6 md:space-y-0">
+                <div>
+                    <h3 class="text-2xl font-semibold text-white">Advin Servers</h3>
+                    <p class="pt-6">High-performance cloud hosting for an affordable price,<br/> featuring lightning fast processors.</p>
+                    <div class="py-6">
+                        <p>Contact: company@advinservers.com</p>
+                        <p>Adress: Advin Services LLC</p>
+                        <p>3640 Concord Pike #1080 Wilmington, DE 19803</p>
+                    </div>
+                    <p>Advin Services LLC, registered in Delaware, United States<br/>under file number 5949002.</p>
+                </div>
+                <div class="flex flex-col space-y-6">
+                    <h2 class="text-white">Solutions</h2>
+                    <a href="#" class="hover:text-white">Cloud Servers</a>
+                    <a href="#" class="hover:text-white">Dedicated Servers</a>
+                    <a href="#" class="hover:text-white">Website Hosting</a>
+                </div>
+                <div class="flex flex-col space-y-6">
+                    <h2 class="text-white">Support</h2>
+                    <a href="#" class="hover:text-white">Contact</a>
+                    <a href="#" class="hover:text-white">Documentation</a>
+                    <a href="#" class="hover:text-white">Service Status</a>
+                </div>
+                <div class="flex flex-col space-y-6">
+                    <h2 class="text-white">Services</h2>
+                    <a href="#" class="hover:text-white">Client Area</a>
+                </div>
+                <div class="flex flex-col space-y-6">
+                    <h2 class="text-white">Legal</h2>
+                    <a href="#" class="hover:text-white">Fair Use</a>
+                    <a href="#" class="hover:text-white">Privacy</a>
+                    <a href="#" class="hover:text-white">Terms</a>
+                    <a href="#" class="hover:text-white">SLA</a>
+                    <a href="#" class="hover:text-white">Refund</a>
+                </div>
+            </div>
+            <div class="mt-24 border-t border-white/10 pt-8">
+                <span>© 2024 Advin Services, LLC. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
