@@ -23,6 +23,11 @@ table>tbody>tr>td:last-child {
 #dropdownMenu {
   @apply p-3
 }
+
+#dropdownMenuSub {
+  @apply p-3 mx-auto
+}
+
 /* Mobile Responsive */
 .container {
     @apply px-5 md:px-[8rem] lg:px-[8rem];
